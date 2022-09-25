@@ -1,5 +1,3 @@
-// console.log, alert, prompt and confirm
-
 console.log("Hello World");
 
 alert("Hi There!");
@@ -25,6 +23,21 @@ if (number > 0) {
   console.log("yang anda masukkan bukanlah angka");
 }
 
-// simple DOM
-const headingOne = document.getElementById("heading 1");
-headingOne.innerHTML = "Demo JavaScript";
+// loop for
+// for (initialization; condition; increment)
+
+for (let i = 0; i < 10; i++) {
+  console.log("number ", i + 1);
+}
+
+// function count down number
+
+function countDown(firstNumber) {
+  console.log("number ", firstNumber);
+  let nextNumber = firstNumber - 1;
+  if (nextNumber > 0) {
+    countDown(nextNumber);
+  }
+}
+
+countDown(10);

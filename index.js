@@ -1,7 +1,7 @@
+// calculate cuboid surface area
 function calculateCuboidArea(cuboidHeight, cuboidLength, cuboidDepth) {
   // check if cuboidHeight, cuboidLength, cuboidDepth are numbers
 
-  // calculate cuboid surface area
   const surfaceArea =
     2 *
     (cuboidLength * cuboidDepth +
