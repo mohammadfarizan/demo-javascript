@@ -32,7 +32,18 @@ for (let i = 0; i < 10; i++) {
   console.log("number ", i + 1);
 }
 
-// fuction
+// fuction count down number
+
+function countDown(firstNumber) {
+  console.log("number ", firstNumber);
+  let nextNumber = firstNumber - 1;
+  if (nextNumber > 0) {
+    countDown(nextNumber);
+  }
+}
+countDown(10);
+
+// function cuboid area
 
 function cuboidArea(a, b, c) {
   var cuboidHeigth = a;
