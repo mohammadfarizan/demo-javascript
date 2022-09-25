@@ -42,3 +42,8 @@ function cuboidArea(a, b, c) {
   return total;
 }
 console.log(cuboidArea(8, 5, 10));
+
+// simpe DOM
+
+const headingOne = document.getElementById("heading 1");
+headingOne.innerHTML = "Demo JavaScript";
