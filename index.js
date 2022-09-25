@@ -1,67 +1,19 @@
-// console.log, alert, prompt and confirm
+// calculate cuboid surface area
+function calculateCuboidArea(cuboidHeight, cuboidLength, cuboidDepth) {
+  // check if cuboidHeight, cuboidLength, cuboidDepth are numbers
 
-console.log("Hello World");
-
-alert("Hi There!");
-
-const userName = prompt("Masukkan nama kamu: ");
-console.log("Hi " + userName);
-
-let answer = confirm("Silahkan pilih OK atau cancel");
-let result = answer ? "Kamu memilih ok" : "kamu memilih cancel";
-alert(result);
-
-//if else statement
-
-const number = prompt("silahkan masukkan angka: ");
-
-if (number > 0) {
-  console.log("angka termasuk bilangan positif");
-} else if (number < 0) {
-  console.log("angka termasuk bilangan negatif");
-} else if (number == 0) {
-  console.log("angka yang dimasukkan adalah 0");
-} else {
-  console.log("yang anda masukkan bukanlah angka");
-}
-
-// loop for
-// for (initialization; condition; increment)
-
-for (let i = 0; i < 10; i++) {
-  console.log("number ", i + 1);
-}
-
-// function count down number
-
-function countDown(firstNumber) {
-  console.log("number ", firstNumber);
-  let nextNumber = firstNumber - 1;
-  if (nextNumber > 0) {
-    countDown(nextNumber);
-  }
-}
-countDown(10);
-
-// function cuboid area
-
-function cuboidArea(a, b, c) {
-  var cuboidHeigth = a;
-  var cuboidLength = b;
-  var cuboidDepth = c;
-  var total;
-
-  total =
+  const surfaceArea =
     2 *
     (cuboidLength * cuboidDepth +
-      cuboidLength * cuboidHeigth +
-      cuboidDepth * cuboidHeigth);
+      cuboidLength * cuboidHeight +
+      cuboidDepth * cuboidHeight);
 
-  return total;
+  // check if surfaceArea is an actual number
+
+  return surfaceArea;
 }
-console.log(cuboidArea(8, 5, 10));
 
-// simple DOM
-
-const headingOne = document.getElementById("heading 1");
-headingOne.innerHTML = "Demo JavaScript";
+console.log("Cuboid Surface Area =", calculateCuboidArea());
+console.log("Cuboid Surface Area =", calculateCuboidArea(8));
+console.log("Cuboid Surface Area =", calculateCuboidArea(8, 2));
+console.log("Cuboid Surface Area =", calculateCuboidArea(8, 5, 10));
