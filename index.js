@@ -32,7 +32,7 @@ for (let i = 0; i < 10; i++) {
   console.log("number ", i + 1);
 }
 
-// fuction count down number
+// function count down number
 
 function countDown(firstNumber) {
   console.log("number ", firstNumber);
@@ -61,7 +61,7 @@ function cuboidArea(a, b, c) {
 }
 console.log(cuboidArea(8, 5, 10));
 
-// simpe DOM
+// simple DOM
 
 const headingOne = document.getElementById("heading 1");
 headingOne.innerHTML = "Demo JavaScript";
