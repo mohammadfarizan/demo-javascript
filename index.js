@@ -25,6 +25,13 @@ if (number > 0) {
   console.log("yang anda masukkan bukanlah angka");
 }
 
+// loop for
+// for (initialization; condition; increment)
+
+for (let i = 0; i < 10; i++) {
+  console.log("number ", i + 1);
+}
+
 // fuction
 
 function cuboidArea(a, b, c) {
