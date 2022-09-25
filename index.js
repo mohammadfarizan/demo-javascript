@@ -28,14 +28,10 @@ if (number > 0) {
 // fuction
 
 function cuboidArea(a, b, c) {
-  var cuboidHeigth;
-  var cuboidLength;
-  var cuboidDepth;
+  var cuboidHeigth = a;
+  var cuboidLength = b;
+  var cuboidDepth = c;
   var total;
-
-  cuboidHeigth = a;
-  cuboidLength = b;
-  cuboidDepth = c;
 
   total =
     2 *
